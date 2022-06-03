@@ -39,7 +39,7 @@ class RegisterController extends Controller
     public function __construct()
     {
 //to dystroy registeration
-        return redirect->to('/')->send();
+        //return redirect->to('/')->send();
         $this->middleware('auth');
 
     }
