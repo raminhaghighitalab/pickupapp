@@ -40,7 +40,7 @@ class RegisterController extends Controller
     {
 //to dystroy registeration
         //return redirect->to('/')->send();
-        $this->middleware('auth');
+        $this->middleware('guest');
 
     }
 
