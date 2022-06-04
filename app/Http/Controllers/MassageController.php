@@ -33,7 +33,7 @@ class MassageController extends Controller
         );
 
         Crud::create($form_data);
-         return redirect('/#contact')->with('success', 'Message has successfully send our team will be in touch with you');
+         return redirect('/#footer')->with('success', 'Message has successfully send our team will be in touch with you');
     }
 
 }
