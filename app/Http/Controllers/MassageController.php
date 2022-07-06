@@ -12,10 +12,10 @@ class MassageController extends Controller
        
             $request->validate([
             'name'           =>   'required|regex:/(^[-0-9A-Za-z.,\/ ]+$)/',
-            'jobtitle'       =>   'required|max:20|regex:/(^[-0-9A-Za-z.,\/ ]+$)/',
+            'jobtitle'       =>   'required|max:200|regex:/(^[-0-9A-Za-z.,\/ ]+$)/',
             'email'          =>   'required|email',
             'phone'          =>   'required|regex:/(^[-0-9,\/ ]+$)/',
-            'dcr'            =>   'required|max:200|regex:/(^[-0-9A-Za-z.,\/ ]+$)/',
+            'dcr'            =>   'required|max:700|regex:/(^[-0-9A-Za-z.,\/ ]+$)/',
 
         ]);
         // dd($request);
