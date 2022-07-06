@@ -19,7 +19,7 @@ use App\Http\Controllers\PasswordChangeController;
 Route::get('/', function () {
     return view('welcome');
 });
-Auth::routes(['register' => false,'login' => false]);
+Auth::routes(['register' => false]);
 
 //admin dashboard
 Route::get('/adminloginpanel', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
