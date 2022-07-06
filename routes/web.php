@@ -20,7 +20,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 //Auth Routes
-Auth::routes();
+//Auth::routes();
+Auth::routes(['register' => false,'login' => false]);
+
 //admin dashboard
 Route::get('/adminloginpanel', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 //crud
